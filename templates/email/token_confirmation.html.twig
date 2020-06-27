@@ -1,0 +1,10 @@
+<h3>Test avec twig</h3>
+<p>voyons voir si ca fonctionne avec notre cher
+	<b>{{ user.username }}</b>
+</p>
+<div>confirmez votre compte en appuyant
+	<a href="{{ url('default_confirm_token',{"token" : user.confirmationToken})}}">ici</a>
+</div>
+
+<div>ou bien en utilisant ce code <b>{{user.confirmationToken}}</b>
+</div>
